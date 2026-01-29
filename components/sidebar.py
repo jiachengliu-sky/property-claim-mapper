@@ -59,7 +59,7 @@ def render_sidebar() -> bool:
     st.sidebar.radio(
         "🗺️ Map Style",
         options=list(TILE_SERVERS.keys()),
-        index=2, # Default to Hybrid
+        index=3, # Default to Hybrid
         key="map_style_selection",
         horizontal=True
     )

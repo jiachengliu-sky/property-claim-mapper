@@ -54,7 +54,7 @@ def render_map_view(map_locked: bool) -> None:
         st.session_state._map_jump_requested = False
     
     # Determine current style
-    selected_style = st.session_state.get("map_style_selection", "Satellite")
+    selected_style = st.session_state.get("map_style_selection", "Hybrid")
     tile_url = TILE_SERVERS.get(selected_style)
     
     # Create map at live position

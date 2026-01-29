@@ -57,6 +57,8 @@ def generate_static_map(
     
     # We MUST add at least one feature (even if dummy) or specify center/zoom to render
     # Since we draw manually, we'll just render with the calculated center/zoom.
+    # Ensure zoom is an integer for tile servers
+    zoom = int(zoom)
     image = m.render(zoom=zoom, center=(center_lng, center_lat))
     draw = ImageDraw.Draw(image)
 
