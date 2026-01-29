@@ -547,7 +547,7 @@ def _render_pdf_section() -> None:
     # Collect current state for the cache key
     live_center = st.session_state.get('live_map_center', DEFAULT_LOCATION)
     live_zoom = st.session_state.get('live_map_zoom', 13)
-    curr_style = st.session_state.get("map_style_selection", "Satellite")
+    curr_style = st.session_state.get("map_style_selection", "Hybrid")
     
     # We pass the incidents list directly. Since it's a list of dicts, 
     # st.cache_data will hash it correctly to detect changes.
